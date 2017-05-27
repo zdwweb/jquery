@@ -1,0 +1,27 @@
+
+
+<html>
+<head>
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+var i=1;
+$(document).ready(function(){
+  $("#show").click(function(){
+  $("div").append(i++);
+  $("div").append("&nbsp;&nbsp");
+  });
+
+  $("#del").click(function(){
+    $("div").remove();
+  });
+});
+</script>
+</head>
+
+<body>
+<button id="show">添加</button>
+<button id="del">清空</button>
+<div></div>
+</body>
+</html>
